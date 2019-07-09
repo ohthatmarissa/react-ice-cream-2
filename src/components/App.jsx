@@ -1,6 +1,7 @@
 import React from 'react';
-import NewIceCreamForm from './NewIceCreamForm';
 import Header from './Header';
+import NewIceCreamForm from './NewIceCreamForm';
+import NewIceCreamControl from './NewIceCreamControl'
 import { Switch, Route } from 'react-router-dom';
 import IceCreamList from './IceCreamList';
 
@@ -22,7 +23,7 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path='/' component={IceCreamList} />
-        <Route path='/newiceCream' component={NewIceCreamForm} />
+        <Route path='/newiceCream' component={NewIceCreamControl} />
       </Switch>
     </div>
   );
