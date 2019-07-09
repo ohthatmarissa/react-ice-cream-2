@@ -2,9 +2,15 @@ import React from 'react';
 
 
 function NewIceCreamForm(){
+  let _name = null;
+  let _type = null;
+  let _price = null;
 
   function handleNewIceCreamFormSubmission(event) {
     event.preventDefault();
+    _name.value = '';
+    _type.value = '';
+    _price.value = '';
   }
 
   return (

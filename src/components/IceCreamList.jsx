@@ -1,24 +1,24 @@
 import React from 'react';
 import IceCream from './IceCream';
 
-var masterIceCreamList = [
-  {
-    name: 'Rocky Road',
-    type: 'Deluxe',
-    price: '$5.00'
-  },
-  {
-    name: 'Banana Split',
-    type: 'Deluxe',
-    price: '$5.00'
-  },
-  {
-    name: 'Vanilla',
-    type: 'Basic',
-    price: '$4.00'
-  },
+// var masterIceCreamList = [
+//   {
+//     name: 'Rocky Road',
+//     type: 'Deluxe',
+//     price: '$5.00'
+//   },
+//   {
+//     name: 'Banana Split',
+//     type: 'Deluxe',
+//     price: '$5.00'
+//   },
+//   {
+//     name: 'Vanilla',
+//     type: 'Basic',
+//     price: '$4.00'
+//   },
   
-];
+// ];
 
 
 function IceCreamList() {
