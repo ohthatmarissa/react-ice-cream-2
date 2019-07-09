@@ -24,7 +24,7 @@ function IceCream(props){
 IceCream.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired
+  price: PropTypes.string.isRequired
 };
 
 export default IceCream;

@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import IceCreamList from './IceCreamList';
-import NewIceCreamForm from './NewIceCreamForm';
-import NewIceCreamControl from './NewIceCreamControl'
+import NewIceCreamControl from './NewIceCreamControl';
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -16,7 +15,7 @@ class App extends React.Component {
   }
 
   handleAddingNewIceCreamToList(newIceCream) {
-    let newMasterIceCreamList = this.state.newMasterIceCreamList.slice();
+    var newMasterIceCreamList = this.state.newMasterIceCreamList.slice();
     newMasterIceCreamList.push(newIceCream);
     this.setState({masterIceCreamList: newMasterIceCreamList});
   }
@@ -36,8 +35,8 @@ class App extends React.Component {
           `}</style>
         <Header/>
         <Switch>
-          <Route exact path='/' component={IceCreamList} />
-          <Route path='/newiceCream' render={()=><NewIceCreamControl onNewIceCreamCreation={this.handleAddingNewIceCreamToList} />} />
+          <Route exact path='/' render={()=><IceCreamList iceCreamList={this.state.masterIceCreamList} />} />
+          <Route path='/newicecream' render={()=><NewIceCreamControl onNewIceCreamCreation={this.handleAddingNewIceCreamToList} />} />
         </Switch>
       </div>
     );

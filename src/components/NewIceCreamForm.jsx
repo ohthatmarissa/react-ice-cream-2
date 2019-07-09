@@ -45,7 +45,7 @@ function NewIceCreamForm(props){
 }
 
 NewIceCreamForm.propTypes = {
-  oneNewIceCreamCreation: PropTypes.func
+  onNewIceCreamCreation: PropTypes.func
 };
 
 export default NewIceCreamForm;
