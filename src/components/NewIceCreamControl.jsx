@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class NewIceCreamControl extends React.Component {
 
@@ -23,5 +24,9 @@ class NewIceCreamControl extends React.Component {
         );
     }
 }
+
+NewIceCreamControl.PropTypes = {
+    onNewIceCreamCreation: PropTypes.func
+};
 
 export default NewIceCreamControl;

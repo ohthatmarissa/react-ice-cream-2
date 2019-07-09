@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
-function NewIceCreamForm(){
+function NewIceCreamForm(props){
   let _name = null;
   let _type = null;
   let _price = null;
 
   function handleNewIceCreamFormSubmission(event) {
     event.preventDefault();
+    props.oneNewIceCreamCreation({name: _name.value, type: _type.value, price: _price.value});
     _name.value = '';
     _type.value = '';
     _price.value = '';
@@ -41,5 +43,9 @@ function NewIceCreamForm(){
     </div>
   );
 }
+
+NewIceCreamForm.propTypes = {
+  oneNewIceCreamCreation: PropTypes.func
+};
 
 export default NewIceCreamForm;
