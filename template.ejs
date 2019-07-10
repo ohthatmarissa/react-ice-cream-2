@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
   <body>
     <% if (htmlWebpackPlugin.options.appMountId) { %>
       <div id="<%= htmlWebpackPlugin.options.appMountId%>"></div>
     <% } %>
+    
   </body>
 </html>

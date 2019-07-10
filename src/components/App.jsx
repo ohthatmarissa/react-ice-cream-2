@@ -29,6 +29,9 @@ class App extends React.Component {
                   background-color: purple;
                   color: white;
                   text-align: center;
+                  padding: 25px 10px 30px 10px;
+                  font-family: 'Amatic SC', cursive;
+                  font-size: 75px;
               }
               a {
                 color: white;

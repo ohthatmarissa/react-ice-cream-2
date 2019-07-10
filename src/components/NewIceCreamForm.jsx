@@ -21,6 +21,13 @@ function NewIceCreamForm(props){
             div {
                 background-color: pink;
             }
+            input[type=text] {
+              background-color: purple;
+              color: white;
+              width: 150px:
+              padding: 100px;
+            }
+            
         `}</style>
       <form onSubmit={handleNewIceCreamFormSubmission}> 
         <input 

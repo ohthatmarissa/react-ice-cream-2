@@ -7,7 +7,13 @@ function Header(){
     <div>
       <style jsx global>{`
             h1 {
-                font-size: 100px:
+                font-size: 200px;
+                font-family: 'Amatic SC', cursive;
+            }
+            img {
+              max-width: 100%;
+              height: auto;
+              margin-top: 20px;
             }
         `}</style>
       <h1>Ice Cream!</h1>
