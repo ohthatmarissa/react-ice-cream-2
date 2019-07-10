@@ -7,7 +7,7 @@ function IceCreamList(props) {
   return (
 
     <div>
-      <p>lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, a laborum placeat dolorem voluptatem alias, quod, saepe exercitationem voluptate cumque voluptas explicabo! Nihil, sit. Cum quibusdam accusantium necessitatibus dolore nisi?</p>
+      <p>Here are all of the delicous ice cream flavors</p>
       <hr/>
       {props.iceCreamList.map((iceCream, index) => 
         <IceCream name={iceCream.name}
