@@ -40,9 +40,9 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' component={Home}/> 
-          <Route path='/flavors'render={()=><IceCreamList iceCreamList={this.state.masterIceCreamList} />}/>
           
-          <Route path='/newicecream' render={()=><NewIceCreamControl onNewIceCreamCreation={this.handleAddingNewIceCreamToList} />} />
+          <Route path='/flavors'render={()=><IceCreamList iceCreamList={this.state.masterIceCreamList} />}/>
+          <Route path='/Admin' render={()=><NewIceCreamControl onNewIceCreamCreation={this.handleAddingNewIceCreamToList} />} />
         </Switch>
       </div>
     );

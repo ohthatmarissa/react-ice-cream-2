@@ -21,14 +21,9 @@ function NewIceCreamForm(props){
             div {
                 background-color: pink;
             }
-            input[type=text] {
-              background-color: purple;
-              color: white;
-              width: 150px:
-              padding: 100px;
-            }
             
-        `}</style>
+        `}</style> 
+        <div class='container'>
       <form onSubmit={handleNewIceCreamFormSubmission}> 
         <input 
           type="text"
@@ -43,10 +38,11 @@ function NewIceCreamForm(props){
         <input
           id="price" 
           placeholder='Ice Cream Price'
-          ref={(input) => {_price = input;}}
-          cols="30" rows="10"></input>__
+          ref={(input) => {_price = input;}}>
+        </input>__
         <button type='submit'>Add!</button>
       </form>
+      </div>
     </div>
   );
 }
