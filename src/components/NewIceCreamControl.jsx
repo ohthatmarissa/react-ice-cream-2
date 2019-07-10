@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NewIceCreamForm from '.newIceCreamForm';
+import NewIceCreamForm from './NewIceCreamForm';
+
 
 class NewIceCreamControl extends React.Component {
 
@@ -15,8 +16,12 @@ class NewIceCreamControl extends React.Component {
 
     
   render(){
+    let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-        currentlyVisibleContent = <NewIceCreamForm onNewIceCreamCreation={this.props.onNewIceCreamCreation}/>;}
+        currentlyVisibleContent = <NewIceCreamForm onNewIceCreamCreation={this.props.onNewIceCreamCreation} />;
+    } else {
+
+    }
 
     return (
       <div>

@@ -9,7 +9,7 @@ function NewIceCreamForm(props){
 
   function handleNewIceCreamFormSubmission(event) {
     event.preventDefault();
-    props.oneNewIceCreamCreation({name: _name.value, type: _type.value, price: _price.value});
+    props.onNewIceCreamCreation({name: _name.value, type: _type.value, price: _price.value});
     _name.value = '';
     _type.value = '';
     _price.value = '';

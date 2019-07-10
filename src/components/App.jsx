@@ -9,13 +9,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterTicketList: []
+      masterIceCreamList: []
     };
     this.handleAddingNewIceCreamToList = this.handleAddingNewIceCreamToList.bind(this);
   }
 
   handleAddingNewIceCreamToList(newIceCream) {
-    var newMasterIceCreamList = this.state.newMasterIceCreamList.slice();
+    var newMasterIceCreamList = this.state.masterIceCreamList.slice();
     newMasterIceCreamList.push(newIceCream);
     this.setState({masterIceCreamList: newMasterIceCreamList});
   }
