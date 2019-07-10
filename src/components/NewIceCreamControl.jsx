@@ -18,10 +18,8 @@ class NewIceCreamControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-        currentlyVisibleContent = <NewIceCreamForm onNewIceCreamCreation={this.props.onNewIceCreamCreation} />;
-    } else {
-
-    }
+      currentlyVisibleContent = <NewIceCreamForm onNewIceCreamCreation={this.props.onNewIceCreamCreation} />;}
+    
 
     return (
       <div>
