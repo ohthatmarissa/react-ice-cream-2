@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './Home';
 import Header from './Header';
 import IceCreamList from './IceCreamList';
 import NewIceCreamControl from './NewIceCreamControl';
@@ -35,7 +36,9 @@ class App extends React.Component {
           `}</style>
         <Header/>
         <Switch>
-          <Route exact path='/' render={()=><IceCreamList iceCreamList={this.state.masterIceCreamList} />} />
+          <Route exact path='/' component={Home}/> 
+          <Route path='/flavors'render={()=><IceCreamList iceCreamList={this.state.masterIceCreamList} />}/>
+          
           <Route path='/newicecream' render={()=><NewIceCreamControl onNewIceCreamCreation={this.handleAddingNewIceCreamToList} />} />
         </Switch>
       </div>

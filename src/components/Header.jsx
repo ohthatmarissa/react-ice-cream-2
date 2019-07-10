@@ -11,7 +11,7 @@ function Header(){
             }
         `}</style>
       <h1>Ice Cream!</h1>
-      <Link to="/">Home</Link> | <Link to="/newiceCream">Add New Flavor</Link>
+      <Link to="/">Home</Link> | <Link to="/newiceCream">Add New Flavor</Link> | <Link to="/flavors">Check Out The Flavors</Link>
       <img src={icecream1}/>
       <br/><br/>
     </div>
