@@ -12,7 +12,8 @@ A website created with HTML, CSS, JavaScript, Node, React where a patron or empl
 ### Specs
 | **Has a Home Page with Nav bar to:**| 
 | **HOME** | *To veiw Ice Cream flavors and info* |
-| **Add A Flavor** | *To add additonal flavors of Ice Cream* |
+| **View Flavors** | *Check out flavors of Ice Cream* |
+| **Admin** | *Employee can add different flavors of ice cream that will display in flavors view* |
 
 
 
